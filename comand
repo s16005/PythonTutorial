@@ -1,0 +1,5 @@
+isinstance(a, b)
+aがｂかどうか判定する
+
+raise
+クラスの例外処理

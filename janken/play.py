@@ -8,7 +8,7 @@ def select_hand():
     """
 
     import random
-    random.shuffle(HANDS)
+    random.choice(HANDS)
     pass
 
 
@@ -22,18 +22,18 @@ def judgement(player, computer):
     if computer == 'グー':
         if player == 1:
             print(0)
-            if player == 2:
-                print(-1)
-            elif player == 3:
-                print(1)
-    elif computer == 'チョキ':
+        elif player == 2:
+            print(-1)
+        elif player == 3:
+            print(1)
+    if computer == 'チョキ':
         if player == 1:
             print(1)
-            if player == 2:
-                print(0)
-            elif player == 3:
-                print(-1)
-    elif computer == 'パー':
+        elif player == 2:
+            print(0)
+        elif player == 3:
+            print(-1)
+    if computer == 'パー':
         if player == 1:
             print(-1)
         elif player == 2:
